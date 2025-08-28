@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Portfolio (HTML + CSS Only)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #212529;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f7df1e, #ffcc00);
+      color: #212529;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      height: 70px;
+      display: block;
+      margin: 0 auto 15px;
+    }
+
+    nav {
+      background: #212529;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f7df1e;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #f7df1e;
+    }
+
+    .code-box {
+      background: #1e1e2f;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: Consolas, monospace;
+      margin: 15px 0;
+      overflow-x: auto;
+    }
+
+    .output-box {
+      background: white;
+      border: 2px solid #f7df1e;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      font-family: Consolas, monospace;
+    }
+
+    .btn-sim {
+      display: inline-block;
+      background: #f7df1e;
+      color: #212529;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 2px solid #212529;
+    }
+
+    footer {
+      background: #212529;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+    <h1>JavaScript Portfolio</h1>
+    <p>Examples of JavaScript Concepts (HTML + CSS only)</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../eportfolio_assignment1 (1)/index.html">Home</a>
+    <a href="../eportfolio_assignment1 (1)/HTML.html">HTML</a>
+    <a href="../eportfolio_assignment1 (1)/css.html">CSS</a>
+    <a href="../eportfolio_assignment1 (1)/bootstrap.html">Bootstrap</a>
+    <a href="../eportfolio_assignment1 (1)/fullstack development.html">Full-Stack Development</a>
+  </nav>
+
+  <!-- Intro -->
+  <section>
+    <h2>📘 What is JavaScript?</h2>
+    <p>
+      <b>JavaScript</b> is a programming language that adds interactivity to websites.  
+      It is used for dynamic features such as buttons, animations, form validation, and more.  
+      Below, we simulate some basic JavaScript examples with <b>code snippets</b> and <b>outputs</b>.
+    </p>
+  </section>
+
+  <!-- Example 1 -->
+  <section>
+    <h2>🎯 Example 1: Print a Message</h2>
+    <p>JavaScript can display output in the browser console or directly on the page.</p>
+    <div class="code-box">
+console.log("Hello, World!");
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      Hello, World!
+    </div>
+  </section>
+
+  <!-- Example 2 -->
+  <section>
+    <h2>📦 Example 2: Variables</h2>
+    <p>JavaScript allows storing values in variables using <code>let</code>, <code>var</code>, or <code>const</code>.</p>
+    <div class="code-box">
+let name = "Alice";<br>
+console.log("My name is " + name);
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      My name is Alice
+    </div>
+  </section>
+
+  <!-- Example 3 -->
+  <section>
+    <h2>📐 Example 3: Simple Function</h2>
+    <p>A function can take input, process it, and return output.</p>
+    <div class="code-box">
+function add(a, b) {<br>
+&nbsp;&nbsp;return a + b;<br>
+}<br>
+console.log(add(5, 3));
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      8
+    </div>
+  </section>
+
+  <!-- Example 4 -->
+  <section>
+    <h2>🔘 Example 4: Button Click</h2>
+    <p>In real JavaScript, clicking the button would show an alert.  
+       Here, we only simulate the button look.</p>
+    <div class="code-box">
+&lt;button onclick="alert('Button clicked!')"&gt;Click Me&lt;/button&gt;
+    </div>
+    <h4>Output (Simulation):</h4>
+    <div class="output-box">
+      <div class="btn-sim">Click Me</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 JavaScript Portfolio | Created with HTML & CSS only</p>
+  </footer>
+
+</body>
+</html>

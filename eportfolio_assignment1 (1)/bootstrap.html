@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Portfolio (HTML + CSS Only)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #212529;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6f42c1, #0d6efd);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      height: 60px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    nav {
+      background: #212529;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #0d6efd;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #0d6efd;
+    }
+
+    .code-box {
+      background: #1e1e2f;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: Consolas, monospace;
+      margin: 15px 0;
+      overflow-x: auto;
+    }
+
+    .output-box {
+      background: white;
+      border: 2px solid #0d6efd;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    /* Simulated Bootstrap styles */
+    .btn {
+      background: #0d6efd;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #6f42c1;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+    }
+
+    .grid {
+      display: flex;
+      gap: 10px;
+    }
+    .grid div {
+      flex: 1;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .col1 { background: #e9ecef; }
+    .col2 { background: #dee2e6; }
+    .col3 { background: #ced4da; }
+
+    footer {
+      background: #212529;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap Logo">
+    <h1>Bootstrap Portfolio</h1>
+    <p>Simulating Bootstrap Components with Only HTML & CSS</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../eportfolio_assignment1 (1)/index.html">Home</a>
+    <a href="../eportfolio_assignment1 (1)/HTML.html">HTML</a>
+    <a href="../eportfolio_assignment1 (1)/css.html">CSS</a>
+    <a href="../eportfolio_assignment1 (1)/bootstrap.html">Bootstrap</a>
+    <a href="../eportfolio_assignment1 (1)/fullstack development.html">Full-Stack Development</a>
+  </nav>
+
+  <!-- Intro -->
+  <section>
+    <h2>📘 What is Bootstrap?</h2>
+    <p>
+      <b>Bootstrap</b> is a popular front-end framework used for creating responsive and mobile-friendly websites.  
+      It provides ready-made styles for buttons, cards, grids, and more.  
+      Here, we have recreated a few Bootstrap-like components using only <b>HTML & CSS</b>.
+    </p>
+  </section>
+
+  <!-- Example 1 -->
+  <section>
+    <h2>🎯 Example 1: Bootstrap Button</h2>
+    <p>A simple button styled like Bootstrap.</p>
+    <div class="code-box">
+&lt;button class="btn"&gt;Click Me&lt;/button&gt;
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      <button class="btn">Click Me</button>
+    </div>
+  </section>
+
+  <!-- Example 2 -->
+  <section>
+    <h2>📦 Example 2: Bootstrap Card</h2>
+    <p>A card layout styled to look like Bootstrap.</p>
+    <div class="code-box">
+&lt;div class="card"&gt;<br>
+&nbsp;&nbsp;&lt;h3&gt;Card Title&lt;/h3&gt;<br>
+&nbsp;&nbsp;&lt;p&gt;This is a simple card example.&lt;/p&gt;<br>
+&lt;/div&gt;
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      <div class="card">
+        <h3>Card Title</h3>
+        <p>This is a simple card example.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example 3 -->
+  <section>
+    <h2>📐 Example 3: Bootstrap Grid Layout</h2>
+    <p>A simple 3-column layout using Flexbox (simulating Bootstrap Grid).</p>
+    <div class="code-box">
+&lt;div class="grid"&gt;<br>
+&nbsp;&nbsp;&lt;div class="col1"&gt;Column 1&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="col2"&gt;Column 2&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="col3"&gt;Column 3&lt;/div&gt;<br>
+&lt;/div&gt;
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      <div class="grid">
+        <div class="col1">Column 1</div>
+        <div class="col2">Column 2</div>
+        <div class="col3">Column 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bootstrap Portfolio | Created with HTML & CSS only</p>
+  </footer>
+
+</body>
+</html>

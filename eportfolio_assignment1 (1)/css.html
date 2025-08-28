@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0ea5e9, #6366f1);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    nav {
+      background: #222;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #0ea5e9;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #0ea5e9;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .code-box {
+      background: #1e293b;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-bottom: 15px;
+      font-family: Consolas, monospace;
+      font-size: 14px;
+    }
+    .output-box {
+      background: #fff;
+      border: 2px solid #0ea5e9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .logo {
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .example {
+      margin-top: 20px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🎨 CSS Portfolio</h1>
+    <p>Showcasing Styling & Design Examples</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../eportfolio_assignment1 (1)/index.html">Home</a>
+    <a href="../eportfolio_assignment1 (1)/HTML.html">HTML</a>
+    <a href="../eportfolio_assignment1 (1)/css.html">CSS</a>
+    <a href="../eportfolio_assignment1 (1)/bootstrap.html">Bootstrap</a>
+    <a href="../eportfolio_assignment1 (1)/fullstack development.html">Full-Stack Development</a>
+  </nav>
+  <!-- What is CSS -->
+  <section>
+    <h2><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" class="logo"> What is CSS?</h2>
+    <p>
+      <strong>CSS (Cascading Style Sheets)</strong> is used to style and format web pages.  
+      It controls layout, colors, fonts, spacing, and responsiveness. CSS makes a plain HTML structure look beautiful and professional.
+    </p>
+  </section>
+
+  <!-- Example 1 -->
+  <section class="example">
+    <h2>🎯 Example 1: Text Styling</h2>
+    <p>This example changes text color, size, and alignment.</p>
+    <div class="code-box">
+h1 {
+  color: teal;
+  text-align: center;
+  font-size: 32px;
+}
+p {
+  color: gray;
+  font-style: italic;
+}
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      <h1 style="color: teal; text-align: center; font-size: 32px;">Styled Heading</h1>
+      <p style="color: gray; font-style: italic;">This is a styled paragraph.</p>
+    </div>
+  </section>
+
+  <!-- Example 2 -->
+  <section class="example">
+    <h2>📦 Example 2: Box Styling</h2>
+    <p>This example creates a card with background, padding, and rounded corners.</p>
+    <div class="code-box">
+.card {
+  background: #e0f7fa;
+  border: 2px solid #0ea5e9;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+}
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      <div style="background:#e0f7fa; border:2px solid #0ea5e9; padding:20px; border-radius:12px; width:250px;">
+        <h3>CSS Card</h3>
+        <p>This box is styled with CSS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example 3 -->
+  <section class="example">
+    <h2>🖼️ Example 3: Hover Effect</h2>
+    <p>This example changes button color on hover.</p>
+    <div class="code-box">
+button {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+button:hover {
+  background: #6366f1;
+}
+    </div>
+    <h4>Output:</h4>
+    <div class="output-box">
+      <button style="background:#0ea5e9; color:white; border:none; padding:10px 20px; border-radius:8px; cursor:pointer;"
+              onmouseover="this.style.background='#6366f1'"
+              onmouseout="this.style.background='#0ea5e9'">
+        Hover Me
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CSS Portfolio | Created with HTML & CSS only</p>
+  </footer>
+</body>
+</html>

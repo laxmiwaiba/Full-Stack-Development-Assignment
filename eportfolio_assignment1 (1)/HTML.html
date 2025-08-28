@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML | My ePortfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      min-height: 40vh;
+      background: linear-gradient(135deg, #2563eb, #60a5fa); /* blue gradient */
+      color: white;
+    }
+    pre {
+      background: #1e293b;
+      color: #f8f8f2;
+      padding: 1rem;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+    .demo-box {
+      border: 2px solid #2563eb;
+      padding: 1rem;
+      border-radius: 10px;
+      background: #f9fafb;
+      margin-bottom: 2rem;
+    }
+    h2 i, h3 i {
+      color: #2563eb;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="fa-brands fa-dev"></i> My ePortfolio</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../eportfolio_assignment1 (1)/fullstack development.html"><i class="fa-solid fa-layer-group"></i> Full-Stack</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../eportfolio_assignment1 (1)/HTML.html"><i class="fa-brands fa-html5"></i> HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="../eportfolio_assignment1 (1)/css.html"><i class="fa-brands fa-css3-alt"></i> CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="../eportfolio_assignment1 (1)/bootstrap.html"><i class="fa-brands fa-bootstrap"></i> Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="../eportfolio_assignment1 (1)/js.html"><i class="fa-brands fa-js"></i> JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero d-flex align-items-center text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold"><i class="fa-brands fa-html5"></i> HTML – HyperText Markup Language</h1>
+      <p class="lead">The backbone of the web: structure, meaning, and content of every page.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <!-- Introduction -->
+    <section>
+      <h2 class="fw-bold mb-3"><i class="fa-solid fa-circle-info"></i> What is HTML?</h2>
+      <p>
+        HTML (HyperText Markup Language) is the foundation of the web. It provides the structure for text,
+        images, links, and media so browsers can render them properly. HTML uses tags like 
+        <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;img&gt;</code> to define the role of each element.
+      </p>
+      <p>
+        With HTML for structure, CSS for style, and JavaScript for interactivity, developers create engaging websites.
+      </p>
+    </section>
+
+    <!-- Example 1 -->
+    <section class="mt-5">
+      <h2 class="fw-bold mb-3"><i class="fa-solid fa-code"></i> Example 1: Basic Page Structure</h2>
+      <p>The skeleton of every HTML document:</p>
+
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+  &lt;p&gt;This is a simple paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+      <h5 class="mt-3">Output:</h5>
+      <div class="demo-box">
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple paragraph.</p>
+      </div>
+    </section>
+
+    <!-- Example 2 -->
+    <section class="mt-5">
+      <h2 class="fw-bold mb-3"><i class="fa-solid fa-link"></i> Example 2: Links & Images</h2>
+      <p>Embed images and create clickable hyperlinks:</p>
+
+      <pre><code>&lt;h2&gt;My Favorite Website&lt;/h2&gt;
+&lt;a href="https://www.wikipedia.org"&gt;Visit Wikipedia&lt;/a&gt;
+
+&lt;h2&gt;My Favorite Image&lt;/h2&gt;
+&lt;img src="https://via.placeholder.com/200" alt="Sample image"&gt;
+</code></pre>
+
+      <h5 class="mt-3">Output:</h5>
+      <div class="demo-box">
+        <h2>My Favorite Website</h2>
+        <a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a>
+
+        <h2 class="mt-3">My Favorite Image</h2>
+        <img src="https://via.placeholder.com/200" alt="Sample image" class="img-fluid rounded shadow">
+      </div>
+    </section>
+
+    <!-- Example 3 -->
+    <section class="mt-5">
+      <h2 class="fw-bold mb-3"><i class="fa-solid fa-list-ul"></i> Example 3: Lists & Tables</h2>
+      <p>HTML can also display structured lists and tabular data:</p>
+
+      <pre><code>&lt;h3&gt;Shopping List&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+  &lt;li&gt;Bread&lt;/li&gt;
+  &lt;li&gt;Eggs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Student Scores&lt;/h3&gt;
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Score&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;td&gt;95&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Bob&lt;/td&gt;&lt;td&gt;88&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+      <h5 class="mt-3">Output:</h5>
+      <div class="demo-box">
+        <h3><i class="fa-solid fa-cart-shopping"></i> Shopping List</h3>
+        <ul>
+          <li>Milk</li>
+          <li>Bread</li>
+          <li>Eggs</li>
+        </ul>
+
+        <h3><i class="fa-solid fa-table"></i> Student Scores</h3>
+        <table class="table table-bordered">
+          <thead class="table-primary"><tr><th>Name</th><th>Score</th></tr></thead>
+          <tbody>
+            <tr><td>Alice</td><td>95</td></tr>
+            <tr><td>Bob</td><td>88</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p><i class="fa-brands fa-html5"></i> © 2025 My ePortfolio | HTML Section</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
